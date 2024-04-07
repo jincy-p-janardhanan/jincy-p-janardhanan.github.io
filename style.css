@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:200,400,500);
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 * {
   border: 0;
   margin: 0;
@@ -159,7 +158,7 @@ div.cv_item {
 }
 @media (min-width: 62em) {
   #cv_sections section.cv_section_title section h4 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 #cv_sections section.cv_section_title section ul {
@@ -217,6 +216,16 @@ div.cv_item {
 }
 
 .link-icon:hover {
+  color: rgb(255, 248, 153);
+}
+
+.link-icon2 {
+  margin-right: 10px;
+  font-size: 0.75em;
+  color: rgb(165, 241, 188);
+}
+
+.link-icon2:hover {
   color: rgb(255, 248, 153);
 }
 
