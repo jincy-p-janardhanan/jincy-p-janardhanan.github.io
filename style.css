@@ -46,24 +46,26 @@ div.header {
   position: relative;
   display: flex;
 }
-/* div.header:after { /* for timeline scrolling washout effect*/
-/*  content: "";
-  position: absolute;
-  bottom: -5rem;
-  left: 0rem;
-  height: 5.1rem;
-  display: block;
-  width: 100%;
-  z-index: 300;
-  background: -moz-linear-gradient(top, white 20%, rgba(255, 255, 255, 0) 100%);
-  /* FF3.6-15 */
-  /* background: -webkit-linear-gradient(top, white 20%, rgba(255, 255, 255, 0) 100%); */
-  /* Chrome10-25,Safari5.1-6 */
-  /* background: linear-gradient(to bottom, white 20%, rgba(255, 255, 255, 0) 100%); */
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#00ffffff",GradientType=0 ); */
-  /* IE6-9 */
-/* } */
+@media (max-width: 62em) {
+  div.header:after { /* for timeline scrolling washout effect */
+    content: "";
+    position: absolute;
+    bottom: -5rem;
+    left: 0rem;
+    height: 5.1rem;
+    display: block;
+    width: 100%;
+    z-index: 300;
+    background: -moz-linear-gradient(top, white 20%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, white 20%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, white 20%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#00ffffff",GradientType=0 );
+    /* IE6-9 */
+  }
+}
 div.header h1 {
   margin-top: 0.8rem;
   margin-bottom: 0.5rem;
@@ -100,6 +102,12 @@ div.cv_item {
   padding: 0rem 1rem 0rem 1rem;
 }
 
+@media (max-width: 62em) {
+  div.cv_item {
+    overflow-y: auto;
+  }
+}
+
 #cv_sections {
   position: relative;
   display: table;
@@ -120,6 +128,16 @@ div.cv_item {
   z-index: 1;
   background: #c5c5c5;
 }
+
+@media (max-width: 62em) {
+  #cv_sections {
+    margin-top: 5rem;
+  }
+  #cv_sections div:after {
+    bottom: 2rem;
+  }
+}
+
 #cv_sections h3 {
   position: -webkit-sticky;
   position: sticky;
@@ -151,7 +169,7 @@ div.cv_item {
 #cv_sections section.cv_section_title section h4 {
   position: absolute;
   bottom: 0;
-  font-size: 1 em;
+  font-size: 0.94em;
   font-weight: 400;
   line-height: 0.5em;
   margin: 0;
