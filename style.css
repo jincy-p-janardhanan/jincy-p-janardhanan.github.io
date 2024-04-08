@@ -125,7 +125,8 @@ div.cv_item {
   position: sticky;
   top: 5rem;
   color: rgb(39, 33, 33);
-  margin: 0;
+  /* margin: 0; */
+  margin-left: -3em;
   font-size: 1em;
   font-weight: 400;
   text-transform: uppercase;
@@ -135,6 +136,7 @@ div.cv_item {
 @media (min-width: 62em) {
   #cv_sections h3 {
     font-size: 1.1em;
+    margin-left: 0;
   }
 }
 #cv_sections section.cv_section_title {
@@ -149,7 +151,7 @@ div.cv_item {
 #cv_sections section.cv_section_title section h4 {
   position: absolute;
   bottom: 0;
-  font-size: 0.9em;
+  font-size: 1 em;
   font-weight: 400;
   line-height: 0.5em;
   margin: 0;
