@@ -45,7 +45,9 @@ div.header {
   padding: 1rem 1rem 1rem 1rem;
   position: relative;
   display: flex;
+  margin: auto;
 }
+
 @media (max-width: 62em) {
   div.header:after { /* for timeline scrolling washout effect */
     content: "";
@@ -67,10 +69,11 @@ div.header {
   }
 }
 div.header h1 {
-  margin-top: 0.8rem;
+  margin-top: 1.1rem;
   margin-bottom: 0.5rem;
+  margin-left: 0.5em;
   font-weight: 400;
-  font-size: 1.6em;
+  font-size: 4em;
   /* letter-spacing: 0.1rem; */
   font-variant: small-caps;
   /* text-transform: uppercase; */
@@ -87,6 +90,13 @@ div.header h2 {
   color: #cfd7de;
   max-width: 30rem;
   margin: auto;
+}
+
+@media (max-width: 62em) {
+  div.header h2 {
+    font-size: 2em;
+    max-width: 40rem;
+  }
 }
 
 div.profile-info {
@@ -144,8 +154,8 @@ div.cv_item {
   top: 5rem;
   color: rgb(39, 33, 33);
   /* margin: 0; */
-  margin-left: -5em;
-  font-size: 1em;
+  margin-left: -4em;
+  font-size: 1.7em;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.01rem;
@@ -169,9 +179,9 @@ div.cv_item {
 #cv_sections section.cv_section_title section h4 {
   position: absolute;
   bottom: 0;
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: 400;
-  line-height: 0.5em;
+  line-height: 0.1em;
   margin: 0;
   padding: 0 0 0 170px;
   color: #c593b0;
@@ -179,6 +189,7 @@ div.cv_item {
 @media (min-width: 62em) {
   #cv_sections section.cv_section_title section h4 {
     font-size: 1.1em;
+    line-height: 0.5em;
   }
 }
 #cv_sections section.cv_section_title section ul {
@@ -192,11 +203,28 @@ div.cv_item {
   font-size: 1em;
   font-weight: 600;
 }
+#cv_sections section.cv_section_title section ul li {
+  margin-left: 1.3rem;
+  font-size: 0.9em;
+}
 
-@media (min-width: 62em) {
+@media (max-width: 62em) {
+  #cv_sections h3 {
+    font-weight: 500;
+  }
+
   #cv_sections section.cv_section_title section ul {
     font-size: 1.1em;
     padding: 0 0 0 150px;
+  }
+
+  #cv_sections section.cv_section_title section ul li {
+    font-size: 1.5em;
+  }
+
+  #cv_sections section.cv_section_title section ul li:first-of-type {
+    font-size: 1.6em;
+    font-weight: 600;
   }
 }
 #cv_sections section.cv_section_title section ul:last-child {
@@ -217,16 +245,15 @@ div.cv_item {
   top: 3px;
   z-index: 2;
 }
-#cv_sections section.cv_section_title section ul li {
-  margin-left: 1.3rem;
-  font-size: 0.9em;
-}
+
 #cv_sections section.cv_section_title section ul li:not(:first-child) {
   margin-top: 0.5rem;
 }
 
 .profile-links {
+  display: flex;
   margin-top: 10px;
+  flex-flow: wrap;
 }
 
 .link-icon {
@@ -243,10 +270,27 @@ div.cv_item {
   margin-right: 10px;
   font-size: 0.75em;
   color: rgb(165, 241, 188);
+  
 }
 
 .link-icon2:hover {
   color: rgb(255, 248, 153);
+}
+
+@media (max-width: 62em) {
+  .profile-links {
+    margin-left: 1.1em;
+  }
+  .link-icon {
+    font-size: 1.5em;
+    /* padding: 0em 2.1em 0em 2.1em; */
+    line-height: 1.5em;
+  }
+  .link-icon2 {
+    font-size: 1.5em;
+    /* padding: 0em 2.1em 0em 2.1em; */
+    line-height: 1.5em;
+  }
 }
 
 .footer {
@@ -258,4 +302,16 @@ div.cv_item {
   bottom: 0;
   /* width: 99%; */
   /* display: flex; */
+}
+
+.profile-picture {
+  width: 175px;
+}
+
+@media (max-width:62em) {
+.profile-picture {
+  margin-left: 1.1em;
+  margin-bottom: 5em;
+  width: 15em;
+}
 }
