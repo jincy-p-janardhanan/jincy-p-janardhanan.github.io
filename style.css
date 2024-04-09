@@ -154,7 +154,7 @@ div.cv_item {
   top: 5rem;
   color: rgb(39, 33, 33);
   /* margin: 0; */
-  margin-left: -4em;
+  margin-left: -2.8em;
   font-size: 1.7em;
   font-weight: 400;
   text-transform: uppercase;
@@ -176,18 +176,18 @@ div.cv_item {
   padding-bottom: 1.25em;
   margin-bottom: 2.2em;
 }
-#cv_sections section.cv_section_title section h4 {
-  position: absolute;
-  bottom: 0;
-  font-size: 1.6em;
-  font-weight: 400;
+.year {
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* font-size: 1.6em; */
+  /* font-weight: 400;
   line-height: 0.1em;
   margin: 0;
-  padding: 0 0 0 170px;
+  padding: 0 0 0 170px; */
   color: #c593b0;
 }
 @media (min-width: 62em) {
-  #cv_sections section.cv_section_title section h4 {
+  .year {
     font-size: 1.1em;
     line-height: 0.5em;
   }
@@ -216,6 +216,7 @@ div.cv_item {
   #cv_sections section.cv_section_title section ul {
     font-size: 1.1em;
     padding: 0 0 0 150px;
+    max-width: 40rem;
   }
 
   #cv_sections section.cv_section_title section ul li {
@@ -246,6 +247,13 @@ div.cv_item {
   z-index: 2;
 }
 
+@media (max-width: 62em) {
+  #cv_sections section.cv_section_title section ul:first-of-type:after {
+    width: 15px;
+    height: 15px;
+    left: 138px;
+  }
+}
 #cv_sections section.cv_section_title section ul li:not(:first-child) {
   margin-top: 0.5rem;
 }
@@ -309,9 +317,9 @@ div.cv_item {
 }
 
 @media (max-width:62em) {
-.profile-picture {
-  margin-left: 1.1em;
-  margin-bottom: 5em;
-  width: 15em;
-}
+  .profile-picture {
+    margin-left: 1.1em;
+    margin-bottom: 5em;
+    width: 15em;
+  }
 }
