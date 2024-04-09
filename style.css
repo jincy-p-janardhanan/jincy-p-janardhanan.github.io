@@ -145,6 +145,7 @@ div.cv_item {
   }
   #cv_sections div:after {
     bottom: 2rem;
+    left: 190px;
   }
 }
 
@@ -154,7 +155,7 @@ div.cv_item {
   top: 5rem;
   color: rgb(39, 33, 33);
   /* margin: 0; */
-  margin-left: -2.8em;
+  margin-left: -2.8rem;
   font-size: 1.7em;
   font-weight: 400;
   text-transform: uppercase;
@@ -174,7 +175,7 @@ div.cv_item {
 #cv_sections section.cv_section_title section {
   position: relative;
   padding-bottom: 1.25em;
-  margin-bottom: 2.2em;
+  margin-bottom: 1.3em;
 }
 .year {
   /* position: absolute; */
@@ -215,7 +216,7 @@ div.cv_item {
 
   #cv_sections section.cv_section_title section ul {
     font-size: 1.1em;
-    padding: 0 0 0 150px;
+    padding: 0 0 0 200px;
     max-width: 40rem;
   }
 
@@ -252,6 +253,7 @@ div.cv_item {
     width: 15px;
     height: 15px;
     left: 138px;
+    left: 180px;
   }
 }
 #cv_sections section.cv_section_title section ul li:not(:first-child) {
@@ -287,7 +289,7 @@ div.cv_item {
 
 @media (max-width: 62em) {
   .profile-links {
-    margin-left: 1.1em;
+    margin-left: 1.5em;
   }
   .link-icon {
     font-size: 1.5em;
@@ -320,6 +322,6 @@ div.cv_item {
   .profile-picture {
     margin-left: 1.1em;
     margin-bottom: 5em;
-    width: 15em;
+    width: 12.8em;
   }
 }
