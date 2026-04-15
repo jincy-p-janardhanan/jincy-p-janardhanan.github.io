@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jincy-p-janardhanan.github.io/</loc>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jincy-p-janardhanan.github.io/why-we-live.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://jincy-p-janardhanan.github.io/making-ai-sentient.htm</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://jincy-p-janardhanan.github.io/railways/</loc>
+    <priority>1.0</priority>
+  </url>
+</urlset>
