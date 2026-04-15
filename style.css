@@ -629,15 +629,46 @@ footer {
 .footer-quote-box {
     max-width: 900px;
     padding: 2rem 2.5rem;
-    border-left: 4px solid #b5d406; /* Electric Cyan */
-    background: linear-gradient(90deg, rgba(212, 6, 178, 0.05) 0%, transparent 100%);
+    border-left: 4px solid;
+    border-image: linear-gradient(to top, #f5dd06, #fb923c, var(--secondary)) 1;
+    background: linear-gradient(180deg, rgba(236, 72, 153, 0.05) 0%, transparent 100%);
     text-align: left;
+    display: flex;
+    align-items: center; 
+    gap: 2rem;
+}
+
+.footer-phoenix {
+    width: 90px; 
+    height: auto;
+    flex-shrink: 0;
+    
+    /* Layer 1: Tight hot pink core */
+    /* Layer 2: Medium purple spread */
+    /* Layer 3: Wide, soft purple aura */
+    filter: drop-shadow(0 0 5px rgba(236, 72, 153, 0.8)) 
+            drop-shadow(0 0 15px rgba(168, 85, 247, 0.6)) 
+            drop-shadow(0 0 35px rgba(168, 85, 247, 0.4));
+}
+
+
+@media (max-width: 600px) {
+    .footer-quote-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
 }
 
 .footer-quote {
     font-family: 'Fira Code', monospace;
     font-size: 1.1rem;
-    color: var(--text);
+    /* color: #f5dd06; */
+    background: linear-gradient(90deg, #f5dd06, #fb923c, var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
     line-height: 1.8;
 }
 
